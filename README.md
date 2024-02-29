@@ -14,11 +14,15 @@ Esta classe em PHP oferece métodos simples para realizar operações básicas d
     ```php
     $minhaClasse = new Classe('nome_da_tabela');
     ```
-3. (Opcional) Defina os campos permitidos e bloqueados usando os métodos `CamposPermitidos` e `CamposBloqueados`:
-    ```php
-    $minhaClasse->CamposPermitidos(['campo1', 'campo2']);
-    $minhaClasse->CamposBloqueados(['campo3', 'campo4']);
-    ```
+3. (Opcional) Defina os campos permitidos OU bloqueados usando apenas um dos métodos a seguir:
+    - Para definir os campos permitidos:
+        ```php
+        $minhaClasse->CamposPermitidos(['campo1', 'campo2']);
+        ```
+    - Para definir os campos bloqueados:
+        ```php
+        $minhaClasse->CamposBloqueados(['campo3', 'campo4']);
+        ```
 4. Utilize os métodos da classe conforme necessário:
 
 ### Operações Disponíveis:
